@@ -1,0 +1,304 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.ico{
+    --primary-color: rgb(92, 41, 7);
+    padding:0% 0% 0% 82%;
+    text-align: right; 
+    margin-right: 20px;
+}
+i{
+    font-size: 30px;
+    color: rgb(92, 41, 7);
+}
+
+
+.navbar{
+    background: var( --sixth-color);
+    border-radius:0px 0px 20px 20px;
+    box-shadow: 3px 3px  2px 2px rgba(183, 142, 106, 0.851);
+}
+.spanner
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(169, 84, 84, 0.559);
+    position: fixed;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 10s;
+}
+.spanner::after{
+    content:"";
+    width: 50px;
+    height: 50px;
+    border-left: 5px solid black;
+    border-radius: 50%;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    
+}
+
+:root{
+    --primary-color: #deb797;
+   --secondary-color:#212121; 
+   --third-color:#804900;
+   --forth-color:#82520e;
+   --fifth-color:#cd8b5c;
+   --sixth-color:linear-gradient(to left,rgb(183, 116, 80),rgb(247, 212, 189),rgb(183, 116, 80)) ;
+
+}
+.darkTheme{
+   --primary-color: #341607;
+   --secondary-color:rgb(254, 221, 191);
+   --third-color:#80490052;
+   --forth-color:#e7831852;
+   --fifth-color:#cd935c82;
+   --sixth-color: linear-gradient(to left,rgb(62, 31, 13),rgb(89, 65, 49),rgb(62, 31, 13));
+}
+.row{
+   margin: 0;
+}
+body{
+    background-color: var( --primary-color);
+}
+.container{
+   border-radius: 0px;
+   margin-top: 20px;
+   width:100%;
+   height: 100%;
+   
+   
+}
+.s1{
+    color: var( --secondary-color);
+    font-size: 20px;
+    font-weight: bolder ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container .row {
+   
+   width: 60%;
+   margin: auto;
+   background-image: url(../img/p9.jpg);
+   justify-content:space-around;
+   border: 1px solid black; 
+   border-radius: 10px;
+   margin-top: 15px;
+   color: var(--primary-color);
+   margin-bottom: 15px;
+}
+
+.row .AddTask{
+    margin-bottom: 15px;
+}
+.container .row i{
+   font-size: larger;
+   text-align: center;
+   margin-top: 15px;
+}
+.ico .fa-angle-down , .fa-angle-up{
+    color: var(--secondary-color);
+    
+}
+
+.ico .fa-moon{
+color: var(--secondary-color);
+}
+.error{
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+.error h4{
+  text-align: center;
+  color:red;
+}
+.container .AddTask{
+   width: 60%;
+   background-color: rgba(212, 209, 215, 0.491);
+   margin: auto;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border-radius: 20px;
+   height: 0;
+   overflow: hidden;
+   transition: all 2s;
+}
+.container .AddTask .data{
+   padding: 20px;
+
+}
+.container .AddTask .data label{
+   display: flex;
+}
+.container .AddTask .data input{
+   width: 90%;
+}
+
+.container .AddTask .Add{
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   width: 30%;
+   padding: 6px;
+   font-size: 15px;
+   margin: auto;
+   margin-top: 15px;
+   text-align: center;
+   display: flex;
+   justify-content: space-around;
+}
+.container .AddTask .Add button{
+   border: 0px;
+   border-radius: 20px;
+   padding: 10px 20px;
+   background-color: var(--forth-color);
+   margin-left: 20px;
+color: var(--primary-color);
+}
+.container .TaskList{
+   background-color:var(--third-color);
+   width: 60%;
+   height: auto;
+   margin: auto;
+   border-radius: 10px;
+   color: white;
+   margin-top: 10px;  
+   font-family: Arial, Helvetica, sans-serif;
+}
+.container .TaskList .MainDiv{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+.container .TaskList .div1{
+   display: flex;
+   justify-content: space-around;
+   padding: 10px;
+   width: 35%;
+}
+.container .TaskList .div2{
+   display: flex;
+   justify-content: space-around;
+   padding: 10px;
+   width: 35%;
+}
+.container .TaskList .div1 img{
+   width:50%;
+}
+.container .TaskList .div2 i{
+   font-size: 20px;
+   color: rgb(149, 8, 8);
+   cursor: pointer;
+}
+
+.NoTask{
+   text-align: center;
+   color: rgba(255, 0, 0, 0.616);
+}
+.border{
+   border: 1px solid;
+}
+.tasks{
+width: 80%;
+margin: auto;
+}
+.tasks h1{
+text-align: center;
+color: var(--fifth-color);
+}
+.tasks .bigImages{
+width: 50%;
+margin: auto;
+}
+.tasks .bigImages img{
+   width: 400px;
+   height: 400px;
+   margin: 20px;
+   border: 5px ;
+   border-radius: 20px;
+}
+.tasks .all-img{
+    margin: auto;
+    width: 90%;
+    border-radius: 20px;
+    background-color:var(--fifth-color) ;  
+}
+
+.tasks .images{
+    
+   width: 70%;
+   margin: auto;
+}
+
+.tasks .images img{
+   width: 60px;
+   height: 60px;
+   margin: 3px;
+   border: 1px solid var(--fifth-color);
+   cursor: pointer;
+} 
+@keyframes move{
+   from{
+   transform: rotate(1turn);
+   }
+   to{
+       transform: rotate(10turn);
+   }
+}
+@media(max-width:750px){
+   .container .row {
+       width: 100%;
+   }
+   .error h4{
+       font-size: 15px;
+       margin-top: 10px;
+   }
+   .container .AddTask{
+       width: 90%;
+   }
+   .container .TaskList{
+       width: 90%;
+   }
+   .container .TaskList .div1{
+       width: 40%;
+   }
+   .container .TaskList .div2{
+       width: 47%;
+   }
+   .container .TaskList .div1 img{
+       width:50%;
+   }
+   .tasks{
+   width: 80%;
+   }
+   .tasks h1{
+   font-size: 25px;
+   }
+   .tasks .bigImages{
+   width: 100%;
+   }
+   .tasks .bigImages img{
+       width: 100%;
+       height: 300px;
+       margin: 10px 0px;
+   }
+   .tasks .images{
+       width: 100%;
+       margin: auto;
+   }
+   
+   .tasks .images img{
+       width: 60px;
+       height: 60px;
+       margin: auto;
+       justify-content: space-around;
+       border: 1px solid var(--fifth-color);
+       cursor: pointer;
+   } 
+   
+}
